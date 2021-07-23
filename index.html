@@ -5,25 +5,30 @@
     <title>ECx</title>
     <link href="css/app.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="ECx">
+    <meta property="og:description" content="||| ECx Be-ECxiTED.">
+    <meta property="og:image" content="https://arsanandha.xyz/BE_ECXITED_OG_2021-01.jpg">
+    <meta property="og:url" content="https://arsanandha.xyz">
 </head>
 <style>
     #profile{
         object-fit: cover;
         width:100%;
-        height:84.3%;
+        height:85.3%;
         background:rgba(0,0,0,0);
     }
     .filter {
         object-fit: cover;
         width:100%;
-        height:84.3%;
+        height:85.3%;
         filter:grayscale(0%);
         transition: all 0.5s ease-in-out;
     }
     .filter:hover{
         object-fit: cover;
         width:100%;
-        height:84.3%;
+        height:85.3%;
         filter:grayscale(100%);
     }
 </style>
@@ -36,22 +41,18 @@
             </div>
             <div class="animate__animated animate__fadeInRight animate__delay-2s">
                 <figure class="filter">
-                    <img id="profile"/>
+                    <img id="profile" src="https://images.unsplash.com/photo-1597634190896-08b63071ba84?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=kitthitorn-chaiyuthapoom-HgI17b8lYb0-unsplash.jpg&w=1920"/>
                 </figure>
             </div>
         </div>
-        <h2 id="text" style="margin-top:-65px;text-align: center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        <div>
+            <div style="text-align: center;">
+                <div id="text">ประเทศนี้เป็นของราษฎรทั้งหลาย ไม่ใช่ของกษัตริย์ตามที่เขาหลอกลวง</div>
+                Photo by <a href="https://unsplash.com/@jamokitt02?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kitthitorn Chaiyuthapoom</a> on <a href="https://unsplash.com/@jamokitt02?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </div>
+        </div>
     </div>
 </div>
 </body>
-<script>
-    let hoverprofile = document.getElementById('profile');
-    hoverprofile.addEventListener('mouseover',(ev => {
-        document.getElementById('text').innerHTML = "BE ECx-ITED";
-    }));
-    hoverprofile.addEventListener('mouseleave',(ev => {
-        document.getElementById('text').innerHTML = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-    }))
-</script>
 <script src="js/app.js"></script>
 </html>

@@ -12,22 +12,22 @@ mix.sass('src/sass/app.sass', 'css').js('src/js/app.js', 'js').options({
         }
     }
 });
-const imagemin = require('imagemin');
-const imageTran = require('imagemin-jpegoptim');
+// const imagemin = require('imagemin');
+// const imageTran = require('imagemin-jpegoptim');
 
-(async () => {
-    const files = await imagemin(['assets/images/*.{jpg,png}'], {
-        destination: 'images',
-        plugins: [
-            imageTran({
-                size:'16%'
-            })
-        ]
-    });
-    console.log("Completed ! ");
-})();
-module.exports = {
-    entry: {
-        app: ['babel-polyfill','./src/js/app.js']
-    }
-}
+// (async () => {
+//     const files = await imagemin(['assets/images/*.{jpg,png}'], {
+//         destination: 'images',
+//         plugins: [
+//             imageTran({
+//                 size:'16%'
+//             })
+//         ]
+//     });
+//     console.log("Completed ! ");
+// })();
+// module.exports = {
+//     entry: {
+//         app: ['babel-polyfill','./src/js/app.js']
+//     }
+// }

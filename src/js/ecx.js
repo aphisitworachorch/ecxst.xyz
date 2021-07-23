@@ -7,4 +7,4 @@ let picofday = [
 ];
 let date = new Date();
 document.getElementById('ecx_logo').src = require('../../assets/ecxblack.svg');
-document.getElementById('profile').src = picofday[Math.floor(Math.random() * picofday.length)];
+// document.getElementById('profile').src = picofday[Math.floor(Math.random() * picofday.length)];
